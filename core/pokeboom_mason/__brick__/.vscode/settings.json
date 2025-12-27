@@ -1,0 +1,32 @@
+{
+    "workbench.colorCustomizations": {
+        "titleBar.activeBackground": "#1b1e24",
+        "titleBar.activeForeground": "#69bb66",
+        "titleBar.inactiveBackground": "#1b1e24",
+        "titleBar.inactiveForeground": "#69bb66",
+        "activityBar.activeBackground": "#1b1e24",
+        "activityBar.foreground": "#69bb66",
+        "editor.background": "#1b1e24"
+    },
+    "cSpell.words": [
+        "brickdance"
+    ],
+    "cSpell.diagnosticLevel": "Hint",
+    "cSpell.overrides": [
+        {
+            "filename": "**/*.i18n.yaml"
+        },
+        {
+            "language": "fr,en",
+            "filename": "**/fr.i18n.yaml"
+        },
+        {
+            "language": "es,en",
+            "filename": "**/es.i18n.yaml"
+        },
+        {
+            "language": "it,en",
+            "filename": "**/it.i18n.yaml"
+        }
+    ],
+}
