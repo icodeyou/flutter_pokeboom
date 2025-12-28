@@ -1,3 +1,3 @@
 # 0.1.0+1
 
-- TODO: Describe initial release.
+- A brick that contains most of the important files for the start of a Riverpod project.
