@@ -1,6 +1,6 @@
 # Pokeboom
 
-This tool gives you all the ingredients to make a delicious Flutter project:
+This tool gives you all the ingredients to make a brand new Flutter project:
 
 - Routing with `go_router`
 - `riverpod` configuration

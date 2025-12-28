@@ -1,5 +1,5 @@
 name: pokeboom
-description: A new brick created with the Mason CLI.
+description: This brick gives you all the ingredients to make a brand new Flutter project.
 version: 0.1.0+1
 
 environment:
