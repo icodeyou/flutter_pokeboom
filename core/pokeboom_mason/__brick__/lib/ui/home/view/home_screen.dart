@@ -1,6 +1,5 @@
-import 'package:brickdance/core/app/i18n/translations.g.dart';
 import 'package:flutter/material.dart';
-
+import 'package:{{projectName.snakeCase()}}/core/app/i18n/translations.g.dart';
 
 class HomeScreen extends StatelessWidget {
   const HomeScreen({super.key});
@@ -10,7 +9,7 @@ class HomeScreen extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         backgroundColor: Theme.of(context).colorScheme.inversePrimary,
-        title: const Text('brickdance'),
+        title: const Text('{{projectName.snakeCase()}}'),
       ),
       body: Center(child: const Text(t.homeScreen.hello)),
     );

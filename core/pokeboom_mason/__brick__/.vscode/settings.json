@@ -9,7 +9,7 @@
         "editor.background": "#1b1e24"
     },
     "cSpell.words": [
-        "brickdance"
+        "{{projectName.lowerCase()}}"
     ],
     "cSpell.diagnosticLevel": "Hint",
     "cSpell.overrides": [

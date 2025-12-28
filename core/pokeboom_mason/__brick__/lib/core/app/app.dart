@@ -1,9 +1,9 @@
-import 'package:brickdance/core/app/i18n/translations.g.dart';
-import 'package:brickdance/core/app/riverpod/riverpod_observers.dart';
-import 'package:brickdance/core/app/routing/router.dart';
-import 'package:brickdance/core/theme/app_colors.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
+import 'package:{{projectName.snakeCase()}}/core/app/i18n/translations.g.dart';
+import 'package:{{projectName.snakeCase()}}/core/app/riverpod/riverpod_observers.dart';
+import 'package:{{projectName.snakeCase()}}/core/app/routing/router.dart';
+import 'package:{{projectName.snakeCase()}}/core/theme/app_colors.dart';
 
 class MyApp extends StatelessWidget {
   const MyApp({super.key});

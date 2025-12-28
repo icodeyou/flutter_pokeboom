@@ -1,5 +1,5 @@
 common:
-  brickdance: Brickdance
+  { { projectName.camelCase() } }: Brickdance
 
 homeScreen:
   hello: Ciao
