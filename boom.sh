@@ -53,4 +53,4 @@ mason make pokeboom -o "$nameSnakeCase"
 # Flutter create step
 cd "$nameSnakeCase"
 flutter create --platforms=ios,android --org $org .
-  
+dart run slang

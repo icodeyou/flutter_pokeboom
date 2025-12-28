@@ -1,5 +1,10 @@
 {
     "cSpell.words": [
-        "pokeboom"
-    ]
+        "gsub",
+        "pokeboom",
+        "tolower"
+    ],
+    "dart.analysisExcludedFolders": [
+        "core/pokeboom_mason/__brick__",
+    ],
 }
