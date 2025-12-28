@@ -5,6 +5,6 @@
         "tolower"
     ],
     "dart.analysisExcludedFolders": [
-        "core/pokeboom_mason/__brick__",
+        "core/pokeboom/__brick__",
     ],
 }
