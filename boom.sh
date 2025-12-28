@@ -1,23 +1,21 @@
 #!/bin/bash
 
 if [ -n "$1" ]; then
-  projectName="$1"
+  originalName="$1"
 else
-  read -p "What's your name? " name
+  echo "Enter the name of the project (ex: Kitten Land): "
+  read originalName
 fi
 
-mkdir "${projectName}_builder"
-cd "${projectName}_builder"
-
-# Get name of project
-echo "Enter the name of the project (ex: Kitten Land) : "
-read originalName
 if [[ $originalName == "" ]] || [[ ! "$originalName" =~ ^[a-zA-Z[:space:]]+$ ]]; then
     echo "The name of your project is invalid. Please start again."
     exit
 fi
 nameSnakeCase=$(echo "$originalName" | awk '{gsub(/[[:space:]]+/, "_"); print tolower($0)}')
 nameLowercase=$(echo "$originalName" | awk '{print tolower($0)}' | tr -d ' ')
+
+mkdir "${nameSnakeCase}_builder"
+cd "${nameSnakeCase}_builder"
 
 # Get Bundle ID for project
 org="com.$nameLowercase"
@@ -53,4 +51,6 @@ mason make pokeboom -o "$nameSnakeCase"
 # Flutter create step
 cd "$nameSnakeCase"
 flutter create --platforms=ios,android --org $org .
+
+# Add post generation actions
 dart run slang
