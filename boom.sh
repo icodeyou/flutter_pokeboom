@@ -40,9 +40,9 @@ echo ""
 
 # Mason step
 mason init
-mason add pokeboom --projectName "$originalName"
+mason add pokeboom
 mkdir "$nameSnakeCase"
-mason make pokeboom -o "$nameSnakeCase"
+mason make pokeboom --projectName "$originalName" -o "$nameSnakeCase"
 
 # Flutter create step
 echo "🔥 Creating project '$nameSnakeCase' with bundle ID '$bundleId'"
@@ -50,4 +50,5 @@ cd "$nameSnakeCase"
 flutter create --platforms=ios,android --org $org .
 
 # Add post generation actions
+flutter pub get
 dart run slang
