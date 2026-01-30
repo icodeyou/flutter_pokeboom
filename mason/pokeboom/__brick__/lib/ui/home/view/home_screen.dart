@@ -11,7 +11,7 @@ class HomeScreen extends StatelessWidget {
         backgroundColor: Theme.of(context).colorScheme.inversePrimary,
         title: const Text('{{projectName.snakeCase()}}'),
       ),
-      body: Center(child: const Text(t.homeScreen.hello)),
+      body: Center(child: Text(t.homeScreen.hello)),
     );
   }
 }
