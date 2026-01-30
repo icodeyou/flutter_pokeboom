@@ -40,7 +40,7 @@ echo ""
 
 # Mason step
 mason init
-mason add pokeboom 
+mason add pokeboom --projectName "$originalName"
 mkdir "$nameSnakeCase"
 mason make pokeboom -o "$nameSnakeCase"
 
