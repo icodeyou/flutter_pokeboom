@@ -35,20 +35,17 @@ if [[ $bundleIdAnswer == 'NO' ]]; then
   echo "Please start again."
   exit
 fi
+
 echo ""
 
-# Create project
-echo "🔥 Creating project '$nameSnakeCase' with bundle ID '$bundleId'"
-
 # Mason step
-mkdir "${nameLowercase}_builder"
-cd "${nameLowercase}_builder"
 mason init
-mason add pokeboom --projectName "$originalName"
+mason add pokeboom 
 mkdir "$nameSnakeCase"
 mason make pokeboom -o "$nameSnakeCase"
 
 # Flutter create step
+echo "🔥 Creating project '$nameSnakeCase' with bundle ID '$bundleId'"
 cd "$nameSnakeCase"
 flutter create --platforms=ios,android --org $org .
 
