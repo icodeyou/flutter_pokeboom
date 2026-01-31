@@ -1,5 +1,5 @@
 common:
-  { { projectName.camelCase() } }: Brickdance
+  error: Error
 
 homeScreen:
   hello: Hello

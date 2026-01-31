@@ -1,6 +1,6 @@
-# Brickdance
+# {{projectName}}
 
-Brickdance has been built with Mason, using the brick [pokeboom].
+{{projectName}} has been built with Mason, using the brick [pokeboom].
 
 ## Getting started
 
