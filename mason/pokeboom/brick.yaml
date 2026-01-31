@@ -1,6 +1,6 @@
 name: pokeboom
 description: This brick gives you all the ingredients to make a brand new Flutter project.
-version: 0.1.2+3
+version: 0.1.3+4
 repository: https://github.com/icodeyou/flutter_pokeboom.git
 
 environment:
