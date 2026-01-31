@@ -1,3 +1,5 @@
 class AppConstants {
-  static const String userName = 'John';
+  // Logging
+  static const int logStacktraceNumber = 5;
+  // ---------------------------------------------------------------------------
 }
