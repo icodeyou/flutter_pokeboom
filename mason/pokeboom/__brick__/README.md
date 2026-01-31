@@ -6,11 +6,6 @@
 
 ### Running the project
 
-- Get the file key.properties and move it to android/
-- Get the file upload-keystore.jks and move it to android/
-- Get the file GoogleService-Info.plist and move it to ios/Runner/
-- Get the file GoogleService-Info.json and move it to android/app/
-
 To compile the project, run the following command :
 
 ```shell
@@ -39,13 +34,6 @@ Run the following command :
 `flutter build ipa --obfuscate --split-debug-info=ios_X.X.X`
 
 With 'X.X.X' being the version of the app.
-
-Then, go to crashlytics, and zip the file 'pixtory/build/ios/archive/Runner.xcarchive/dSYMs/Runner.app.dSYM'
-And upload this file to Crashlytics console.
-
-EDIT : Maybe it's not necessary anymore because Firebase says :
-"Apple platforms: Make sure that your project is using the recommended version configuration (Flutter 3.12.0+ and Crashlytics Flutter plugin 3.3.4+) so that your project can automatically generate and upload Flutter symbols (dSYM files) to Crashlytics."
-<https://firebase.google.com/docs/crashlytics/get-started?platform=flutter&authuser=0#add-sdk>
 
 ## Git Workflow
 
