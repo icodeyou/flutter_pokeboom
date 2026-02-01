@@ -1,4 +1,5 @@
 import 'package:flutter_riverpod/flutter_riverpod.dart';
+import 'package:{{projectName.snakeCase()}}/core/app/log/log.dart';
 
 final class RiverpodObserver extends ProviderObserver {
   @override
@@ -26,7 +27,7 @@ final class RiverpodObserver extends ProviderObserver {
     Object error,
     StackTrace stackTrace,
   ) {
-    print('''
+    logger.e('''
         ⛔ ERROR IN PROVIDER : ${context.provider}
         💬 MESSAGE : $error
         📜 STACKTRACE : $stackTrace
