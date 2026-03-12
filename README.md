@@ -7,6 +7,7 @@ This tool gives you all the ingredients to make a brand new Flutter project:
 - Logs with package `logger`
 - Detailed `.gitignore` file
 - VS Code settings → colors and cSpell pre-requisites
+- VS Code settings -> Terminal config to use with extension `Terminals Manager`
 - Internationalization with `slang`
 - Clean architecture
 - App constants
